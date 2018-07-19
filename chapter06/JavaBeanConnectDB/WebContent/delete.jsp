@@ -31,13 +31,13 @@
 			try {
 				bc.executeSQL(deletesql);
 			} catch (Exception e) {
-				out.println("<font color=\"red\">输入信息有误，可能会覆盖现有数据，请检查后重新输入</font><br><hr>");
+				out.println("<font color=\"red\">输入信息有误，删除数据发生异常，请检查后重新输入</font><br><hr>");
 			}
 		}
 
 		//执行SQL语句并获取执行结果
 		ResultSet rs = bc.select(sql);
-		//显示度取出来的信息
+		//显示读取出来的信息
 	%>
 	<table border=1>
 		<caption>学生信息表</caption>

@@ -39,7 +39,7 @@
 		String sql = "select * from studentinfo";
 		//执行SQL语句并获取执行结果
 		ResultSet rs = bc.select(sql);
-		//显示度取出来的信息
+		//显示读取出来的信息
 	%>
 	<table border=1>
 		<caption>学生信息表</caption>
