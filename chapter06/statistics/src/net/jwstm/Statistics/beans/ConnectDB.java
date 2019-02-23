@@ -10,7 +10,8 @@ public class ConnectDB {
 	public ConnectDB() {
 		
 	}
-	//该方法用于获取数据库连接
+	
+		//该方法用于获取数据库连接
 		public Connection getConnection() throws SQLException,ClassNotFoundException {
 			Connection conn=null;
 			//定义字符串,表示驱动,数据库地址,用户名和密码

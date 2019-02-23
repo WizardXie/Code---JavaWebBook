@@ -12,7 +12,8 @@
 <form action="inputScores.jsp" method="POST">
 	姓名：<input type="text" name="name"><br>
 	成绩：<input type="text" name="score"><br>
-	<input type="submit" value="添加">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="重置">
+	<input type="submit" value="添加">&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="reset" value="重置">
 </form>
 <hr>
 <jsp:useBean id="bc" class="net.jwstm.Statistics.beans.ConnectDB"></jsp:useBean>

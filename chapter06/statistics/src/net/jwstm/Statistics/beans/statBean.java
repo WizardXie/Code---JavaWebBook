@@ -11,7 +11,6 @@ public class statBean {
 	String minName;// 最低分姓名
 	String minScore;// 最低分
 	String average;// 平均分
-	//int bad;// 不及格人数
 	ArrayList<String> badNames=new ArrayList<>();// 不及格学生姓名
 	ArrayList<String> badScores=new ArrayList<>();// 不及格学生成绩
 	// 获取所有学生成绩信息
@@ -62,8 +61,8 @@ public class statBean {
 	// 获取最低分
 	public void getMin() throws SQLException {
 		ResultSet rs = this.getResult();
-		String tempName = "";// 最高分学生姓名
-		int s = 100;// 最高分，假设初始值为100
+		String tempName = "";// 最低分学生姓名
+		int s = 100;// 最低分，假设初始值为100
 		int t = 0;// rs中每一条目中的成绩
 		while (rs.next()) {
 			t = Integer.parseInt(rs.getString(2));
@@ -88,6 +87,7 @@ public class statBean {
 		}
 		average=String.valueOf(sum/l);
 	}
+	
 	//统计不及格信息，这里设置及格线为60
 	public void getBad() throws SQLException {
 		ResultSet rs = this.getResult();

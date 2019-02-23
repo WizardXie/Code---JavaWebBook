@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>登录失败</title>
 </head>
 <body>
 <h3>登录失败，用户名或密码错误，5秒后请重新登录</h3>
 <%
-	response.setHeader("refresh", "5;login.jsp");
+	response.setHeader("refresh", "5;Login.jsp");
 %>
 </body>
 </html>

@@ -4,14 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>登录页面</title>
 </head>
 <body>
-	<form action="check.jsp" method="post">
-		帐户：<input type="text" name="id"><br> 密码：<input
-			type="password" name="password"><br> <input
-			type="submit" value="登录">&nbsp;&nbsp;&nbsp;&nbsp;<input
-			type="reset" value="重置">
+	<form action="Check.jsp" method="post">
+		帐户：<input type="text" name="id"><br> 
+		密码：<input type="password" name="password"><br> 
+		<input	type="submit" value="登录">&nbsp;&nbsp;&nbsp;&nbsp;
+		<input	type="reset" value="重置">
 	</form>
 </body>
 </html>

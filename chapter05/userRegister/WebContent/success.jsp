@@ -8,6 +8,6 @@
 </head>
 <body>
 <h3>登录成功！</h3>
-<a href="update.jsp">单击此处</a>可以修改您的密码
+<a href="Update.jsp">单击此处</a>可以修改您的密码
 </body>
 </html>

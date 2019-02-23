@@ -1,6 +1,5 @@
 <%@page import="java.sql.*"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,11 +7,11 @@
 <title>用户注册</title>
 </head>
 <body>
-	<form action="register.jsp" method="post">
-		帐户：<input type="text" name="id"><br> 密码：<input
-			type="password" name="password"><br> <input
-			type="submit" value="注册">&nbsp;&nbsp;&nbsp;&nbsp;<input
-			type="reset" value="重置">
+	<form action="Register.jsp" method="post">
+		帐户：<input type="text" name="id"><br> 
+		密码：<input type="password" name="password"><br> 
+		<input	type="submit" value="注册">&nbsp;&nbsp;&nbsp;&nbsp;
+		<input	type="reset" value="重置">
 	</form>
 	<hr>
 	<%-- 获取注册用户信息 --%>
@@ -22,7 +21,7 @@
 		String pass = request.getParameter("password");
 		//定义表示MySQL的jdbc驱动类名的字符串	
 		String driver = "com.mysql.jdbc.Driver";
-		//定义表示数据库的URL的字符串，localhost为MySQL服务器的计算机名，也可以用IP地址表示，3306位访问端口
+		//定义表示数据库的URL的字符串，localhost为MySQL服务器的计算机名，也可以用IP地址表示，3306为访问端口
 		String url = "jdbc:mysql://localhost:3306/testdb";
 		//定义表示数据库用户名和密码的字符串
 		String username = "root";
